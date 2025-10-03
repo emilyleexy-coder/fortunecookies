@@ -9,15 +9,25 @@
   </head>
     
   <body>
-  <div class="container">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Fortune Cookie</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
   
+<!-- Main Content -->
+  <div class="container">
   <h1>✨ Your Daily Fortune Cookie ✨</h1>
   
+  <!-- Fortune Cookie Section -->
   <div id="cookie" class="cookie">🥠</div>
   <div id="fortune" class="fortune hidden"></div>
   <p id="instruction">Click the cookie to crack it open! 🔮</p>
   
-
  <!-- Emoji Marquee -->
   <div class="emoji-marquee">
     <div class="emoji-track">
@@ -25,10 +35,56 @@
     </div>
   </div>
   
- <!-- new footer text -->
-  <p class="footer-text">
-    Every click brings a new dose of inspiration and positivity to brighten your day! 🌟
+<!-- Share Positivity Section -->
+<section id="share-positivity">
+  <h2>Share Your Positivity 💗</h2>
+  <p class="subtitle">
+    Send a positive message to brighten someone else's day!  
+    Your message might appear in another person's fortune cookie 🌟
   </p>
+
+ <div class="form-box">
+   
+    <!-- Input with counter -->
+    <textarea id="positivityInput" maxlength="100"
+      placeholder="Share your positive message here... (e.g., 'Every challenge is an opportunity to grow stronger! 🌱')"></textarea>
+    <div class="counter"><span id="charCount">0</span>/100</div>
+
+    <!-- Tips -->
+    <div class="tips">
+      <p>💡 Tips for great messages:</p>
+      <ul>
+        <li>Keep it positive and uplifting</li>
+        <li>10-100 characters work best</li>
+        <li>Add an emoji for extra charm ✨</li>
+      </ul>
+    </div>
+
+    <!-- CTA button -->
+    <button id="shareButton">📨 Share Positivity</button>
+  </div>
+
+  <!-- Confirmation -->
+  <p id="confirmation" class="hidden">💖 Thanks for sharing! Your positivity has been sent into the universe ✨</p>
+
+  <!-- Positivity Wall -->
+  <div id="positivityWall"></div>
+</section>
+
+  <!-- Community Messages Section -->
+  <section class="recent-messages">
+  <h2>Recent Messages from Our Community 💝</h2>
+  <div id="messageCards" class="cards"></div>
+</section>
+
+ <!-- new footer text -->
+  <footer>
+  <p class="footer-text">
+    Every click brings a new dose of inspiration and positivity to brighten your day! 🌟 <br/>Made with 💖 for spreading daily positivity
+  </p>
+  </footer>
+  </body>
+  </html>
 </div>
     <script  src="./script.js"></script>
 

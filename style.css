@@ -1,6 +1,6 @@
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+  background: linear-gradient(135deg, #ffdde1, #fef1e0);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -11,6 +11,8 @@ body {
 .container {
   text-align: center;
   max-width: 1920px;
+  padding: 30px;
+  margin: auto;
 }
 
 h1 {
@@ -19,7 +21,7 @@ h1 {
 }
 
 .cookie {
-  font-size: 10rem;
+  font-size: 12rem;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -44,7 +46,7 @@ h1 {
 }
 
 .footer-text {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 0.9rem;
   font-style: italic;
   color: #444;
@@ -56,14 +58,14 @@ h1 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin: 20px 0;
+  margin: 20px 20px;
 }
 
 /* The scrolling track */
 .emoji-track {
   display: inline-block;
   white-space: nowrap;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   animation: scroll-left 12s linear infinite;
 }
 
@@ -75,4 +77,125 @@ h1 {
   to {
     transform: translateX(-100%);
   }
+}
+
+/* Daily Inspiration Section */
+#share-positivity {
+  margin: 05px auto;
+  max-width: 1200px;
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff5eb, #ffe6f7);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+#share-positivity h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #ff4da6, #ff944d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#share-positivity .subtitle {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+/* Input Box */
+.form-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+#positivityInput {
+  width: 97%;
+  height: 90px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  resize: none;
+  outline: none;
+}
+
+.counter {
+  text-align: right;
+  font-size: 10px;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Tips */
+.tips {
+  font-size: 13px;
+  margin: 15px 0;
+  color: #555;
+  margin-top: -16px;
+}
+.tips p {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.tips ul {
+  margin: 0;
+  padding-left: 15px;
+}
+
+/* Button */
+#shareButton {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6ec7, #a855f7);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#shareButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.community-section {
+  margin-top: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  width: 220px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-footer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
