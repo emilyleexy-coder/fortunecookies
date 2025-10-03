@@ -1,0 +1,78 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  max-width: 1920px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.cookie {
+  font-size: 10rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cookie:hover {
+  transform: scale(1.1);
+}
+
+.fortune {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  font-weight: medium;
+  font-size: 1.1rem;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer-text {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #444;
+  opacity: 0.8;
+}
+
+/* Marquee container */
+.emoji-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+/* The scrolling track */
+.emoji-track {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  animation: scroll-left 12s linear infinite;
+}
+
+/* Animation keyframes */
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
